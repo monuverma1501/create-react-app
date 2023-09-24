@@ -1,4 +1,4 @@
-import './NewProducts.css'
+import './Home.css'
 import startwo from "../../images/startwo.png";
 import React, { useState, useEffect, Component } from "react";
 import "bootstrap/dist/css/bootstrap.css";
@@ -8,7 +8,10 @@ import Slider from "react-slick";
 import ProductCard from "./ProductCard.js";
 import arrow2 from "../../images/arrow2.png";
 import arrow3 from "../../images/arrow3.png";
-// import zIndex from '@material-ui/core/styles/zIndex';
+
+import Header from "./Header";
+import ContactUs from "./ContactUs";
+
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -82,6 +85,9 @@ function Products() {
     };
   
     return (
+      <>
+        <Header/>
+
         <div className="productpage">
             <div className=' headline'>
                 <div className=" product">
@@ -108,6 +114,9 @@ function Products() {
           </div>
             
         </div>
+
+        <ContactUs/>
+        </>
     );
 }
 export default Products;
