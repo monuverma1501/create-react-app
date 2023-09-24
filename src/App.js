@@ -1,7 +1,7 @@
 import React from 'react'
 import {
   BrowserRouter as Router, 
-  Switch,
+  Routes,
   Route
 } from 'react-router-dom'
 import Layout from './layout/Layout'
@@ -16,11 +16,11 @@ function App() {
     <div className="body-wrap">
       <Router>
         <Layout>
-          <Switch>
+          <Routes>
             <Route path={'/'} component={Home}></Route>
             {/* <Route path={'/AboutUs'} component={AboutUs}></Route>
             <Route path={'/ContactUs'} component={ContactUs}></Route> */}
-          </Switch>
+          </Routes>
         </Layout>
       </Router>
     </div>
