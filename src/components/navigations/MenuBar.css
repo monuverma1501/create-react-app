@@ -1,0 +1,242 @@
+/* header */  
+.header {
+    box-shadow: black;
+    margin-top: 0px;
+    width: 100%;
+    z-index: 3;
+}
+.no-wrap {
+    width: 100%;
+    background-color: #1A1A1A;
+    font-size: small;
+    font-weight: 400px;
+    font-family: Poppins;
+    position: fixed;
+    margin: auto;
+    height: 42px;
+    display: inline-flex;
+    justify-content: space-between;
+  }
+  .leftTopBar {
+    width:50%;
+    justify-content:left;
+    display:inline-flex;
+    margin-left: 40px;
+    margin-top: 12px;
+  }
+  .rightTopBar {
+    width:50%;
+    justify-content:right;
+    display: inline-flex;
+    margin-right: 40px;
+    margin-top: 1px;
+  }
+  .rightTopBar div {
+    color: #626262;
+    margin-top: 15px;
+    padding-left: 12px;
+  }
+  .delivery-image {
+    color: #626262;
+    margin-top:1px;
+  }
+  .return {
+    color: #626262;
+    margin-top:3px;
+    margin-left:5px;
+    height: 70%;
+  }
+  .socialimg {
+    padding-left:8px;
+    height: 10px;
+  }
+  
+/* ok tested */
+
+.shop{
+    height: 42px;
+    display: inline-flex;
+    justify-content:space-between;
+    margin-top: 42px;
+    width: 100%;
+    background-color: black;
+    position:fixed;
+}
+.shopkart {
+    width:40%;
+    margin-left: 40px;
+    display:inline-flex ;
+    font-size: 40px;
+    font-family:sans-serif;
+    font-weight: 50px;
+    justify-content: left;
+    margin-top: -10px;
+    border-bottom: 2px solid #ffffff;
+    color: rgba(255, 255, 255, 1);
+}
+.wishlistBag {
+    width:60%;
+    margin-top: 5px;
+    border-bottom: 2px solid #ffffff;
+    justify-content: right;
+    margin-right: 45px; 
+    display: flex;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+}
+.nav-wrapper {
+    margin-top: 84px;
+    width: 100%;
+    position: fixed;
+    background-color: black;
+}
+.nav-wrapper ul {
+    width: 100%;
+    list-style: none; 
+    overflow: hidden; 
+    justify-content: center;
+    background-color: transparent;
+}
+.nav-wrapper ul li a {
+    justify-content: center;
+    padding: 10px 50px;
+    text-decoration: none;
+    color: #ffffff;
+}
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+ 
+.header .menu-icon {
+    justify-content: center;
+    margin-top: -40px;
+    cursor: pointer;
+    display: inline-block;
+    float:right;
+    padding: 28px 10px;
+    position: relative;
+    user-select: none;
+}
+  
+.header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+}
+  
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+  
+.header .menu-icon .navicon:before {
+    top: 5px;
+}
+  
+.header .menu-icon .navicon:after {
+    top: -5px;
+}
+  
+/* menu btn */  
+.header .menu-btn {
+    display: none;
+}
+  
+.header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+}
+  
+.header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+}
+  
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+  
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+  
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+}
+
+/* 48em = 768px */
+@media (min-width: 48em) {
+    no-wrap li{
+        display: inline;
+    }
+    .header li {
+      float: left;
+    }
+    
+    .header ul li a {
+      padding: 10px 30px;
+      justify-content: center;
+    }
+
+    .header .menu {
+      clear: none;
+      
+      float: right;
+      max-height: none;
+    }
+
+    .header .menu-icon {
+      display: none;
+    }
+}
+
+@media all and (max-width: 555px) {
+  
+    .no-wrap{
+      max-width: 900px;
+      font-size: 10px;
+    }
+    .socialimg {
+      padding-left:1px;
+      height: 6px;
+    }
+    .shopkart {
+        max-width: 900px;
+    }
+    .shopkart {
+      margin-left: 10px;
+      font-size: 30px;
+      margin-top: -5px;
+  }
+  .wishlistBag {
+    margin-top: 10px;
+      margin-right: 50px; 
+      font-size: 12px;
+  }
+  .leftTopBar {
+    width:50%;
+    justify-content:left;
+    display:inline-flex;
+    margin-left: 10px;
+    margin-top: 12px;
+  }
+  .rightTopBar {
+    width:50%;
+    justify-content:right;
+    display: inline-flex;
+    margin-right: 10px;
+    margin-top: 1px;
+  }
+}
