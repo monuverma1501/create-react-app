@@ -16,8 +16,8 @@ function App() {
         <div id="main-container">
           <Routes>
             <Route className="home" exact path="/" element={<Home/>}/>
-            {/* <Route exact path="/" element={<NewProducts/>}/> */}
-            {/* <Route exact path="/" element={<ContactUs/>}/> */}
+            {/* <Route  path="/" element={<NewProducts/>}/> */}
+            {/* <Route  path="/" element={<ContactUs/>}/> */}
           </Routes>
         </div>
       <Footer />

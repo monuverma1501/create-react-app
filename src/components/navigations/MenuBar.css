@@ -150,7 +150,7 @@
     top: -5px;
 }
   
-/* menu btn */  
+  
 .header .menu-btn {
     display: none;
 }
@@ -176,7 +176,6 @@
     top: 0;
 }
 
-/* 48em = 768px */
 @media (min-width: 48em) {
     no-wrap li{
         display: inline;

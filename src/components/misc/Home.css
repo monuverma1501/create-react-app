@@ -60,14 +60,6 @@ li div {
   margin-top: -150px;
 }
 
-/* .arrow2{
-  margin-left: 40%;
-  margin-right: 40%;
-  margin-top: -500px;
-}
-.arrow3{
-  margin-top: -50px;
-} */
 
 @media only screen and (max-width: 720px) {
   .productpage{
@@ -82,10 +74,10 @@ li div {
     font-size: 40px;
   }
   .startwo {
-    top: 650px;
+    top: 680px;
   }
   .line2 {
-    top: 640px;
+    top: 670px;
     width: 95%;
   }
   .functionality{
@@ -107,9 +99,7 @@ li div {
     margin-right: 5%;
     margin-top: -150px;
   }
-  /* .arrow2{
-      margin-top: 100px;
-  } */
+  
 }
 
 @media all and (max-width: 550px) {

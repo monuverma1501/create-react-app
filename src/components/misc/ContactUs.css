@@ -170,7 +170,7 @@ input {
     text-align: left;
     line-height: 35px;
     letter-spacing: 6px;
-    z-index:3;
+    z-index:0;
     overflow: visible;
   }
   .send {
